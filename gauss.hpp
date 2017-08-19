@@ -99,7 +99,7 @@ void gauss_elimination(matrix<_Tp>& equations, vector<_Tp>& ans) {
       free_cnt += cnt - 1;
     }
   }
-  if (flag == 1) throw cnt;
+  if (flag == 1) throw free_cnt;
 }
 template <typename _Tp>
 void gauss_elimination(matrix<_Tp>& equations, int row_idx, int col_idx) {
